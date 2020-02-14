@@ -1,7 +1,5 @@
 button {
 
-}
-
 .round {
     border-radius: 50%;
     background-color: blue;
@@ -10,4 +8,5 @@ button {
 .squate {
      border-radius: 15%;
      background-color: black%;
+}
 }
