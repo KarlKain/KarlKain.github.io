@@ -1,4 +1,6 @@
-button {
+div{
+padding: 100px;
+}
 
 .round {
     border-radius: 50%;
@@ -7,6 +9,6 @@ button {
 
 .squate {
      border-radius: 15%;
-     background-color: black%;
+     background-color: black;
 }
 }
