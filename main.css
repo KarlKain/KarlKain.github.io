@@ -3,14 +3,14 @@
 .round {
     border-radius: 50%;
     background-color: blue;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 50px;
 }
 
 .squate {
      border-radius: 15%;
      background-color: black;
-     width: 1000px;
-     height: 500px;
+     width: 100%;
+     height: 50px;
 }
 
