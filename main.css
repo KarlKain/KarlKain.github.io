@@ -2,14 +2,14 @@
 
 .round {
     border-radius: 50%;
-    background-color: blue;
+    background-color: orange;
     width: 75px;
     height: 75px;
 }
 
 .squate {
      border-radius: 15%;
-     background-color: black;
+     background-color: lightgray;
      width: 100px;
      height: 75px;
 }
