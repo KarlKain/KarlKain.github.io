@@ -5,6 +5,7 @@
     background-color: orange;
     width: 75px;
     height: 75px;
+    color: white;
 }
 
 .squate {
@@ -12,5 +13,6 @@
      background-color: lightgray;
      width: 100px;
      height: 75px;
+     color: white;
 }
 
