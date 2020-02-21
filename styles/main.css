@@ -1,0 +1,22 @@
+input {
+    width: 100%;
+    height: 10vh;
+}
+
+button {
+    color: white;
+    font-size: 25pt;
+    border: none;
+    width: 100%;
+    height: 22.5vh;
+}
+
+.round {
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.squate {
+     border-radius: 15%;
+     background-color: lightgray;
+}
