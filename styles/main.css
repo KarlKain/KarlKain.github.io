@@ -10,7 +10,7 @@ button {
     width: 100%;
     height: 22.5vh;
     .btn-1 {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  background-image: linear-gradient(to all, darkgray);
 }
 
 .round {
