@@ -15,11 +15,13 @@ button {
 .round {
     border-radius: 50%;
     background-color: orange;
+    border-width: 5px:
 }
 
 .squate {
      border-radius: 20%;
      background-color: gray;
+     border-width: 5px;
 }
 .output {
      width: 100%;
