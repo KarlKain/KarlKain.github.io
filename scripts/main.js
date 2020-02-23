@@ -1,7 +1,8 @@
 /*window.onload = () => {
 
-    let buttons = document.querySelectorAll('button');
-
+    const buttons = document.querySelectorAll('button');
+    const currentOperandTextElement = document.querySelector('
+    [data-current-operand]')
 
     buttons.forEach((button) => {
 
