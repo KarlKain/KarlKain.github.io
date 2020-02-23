@@ -22,6 +22,7 @@ button {
      border-radius: 20%;
      background-color: gray;
      border-width: 5px;
+     font-style: georgia;
 }
 .output {
      width: 100%;
