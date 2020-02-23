@@ -1,5 +1,5 @@
 class Calculator {
-    constructer(currentOperandTextElement) {
+    constructor(currentOperandTextElement) {
         this.currentOperandTextElement = currentOperandTextElement
     }    
 /*window.onload = () => {
