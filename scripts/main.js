@@ -1,8 +1,9 @@
+/*window,onload = () => {
+
 class Calculator {
     constructor(currentOperandTextElement) {
         this.currentOperandTextElement = currentOperandTextElement
     }    
-/*window.onload = () => {
 
  appendNumber(number) {
      this.currentOperand = number
