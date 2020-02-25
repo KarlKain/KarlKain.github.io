@@ -10,7 +10,7 @@ class Calculator {
  }
 
  upadateDisplay() {
-     this.currentOperandTextElement.innerText = this.currnetOperand
+     this.currentOperandTextElement.innerText = this.currentOperand
  }
 } 
     const buttons = document.querySelectorAll('button');
