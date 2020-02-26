@@ -1,13 +1,32 @@
 /*window,onload = () => {
 class Calculator {
-    constructor(currentOperandTextElement) {
-        this.currentOperandTextElement = currentOperandTextElement
+    constructor(previousOperandTextElement,currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currnetOperandTextElement
+        this.clear()
     }    
 
+ clear() {
+   this.currentOperand = ''
+   this.previousOperand = ''
+   this.operation = undefined
+ }
+ 
+ delete() {
+ 
+ }
  appendNumber(number) {
      this.currentOperand = number
  }
 
+ chooseOperation(operation) {
+ 
+ }
+ 
+ compute() {
+ 
+ }
+ 
  upadateDisplay() {
      this.currentOperandTextElement.innerText = this.currentOperand
  }
