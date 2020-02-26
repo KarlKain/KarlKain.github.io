@@ -68,16 +68,16 @@ updateDisplay(){
 }
  
     
-const numberButtons =document.querySelectorAll('[data-number'])
-const operationButtons = document.querySelectorAll('[data-operation'])
-const equalsButton = document.querySelector('[data-equals'])
-const deleteButton = document.querySelector('[data-delete'])
-const allClearButton = document.querySelector('[data-all-clear'])
-const alg1Button = document.querySelector('[data-alg1-operatrions'])
-const geomButton = document.querySelector('[data-geom-operations'])
-const squaringButton = document.querySelector('[data-squaring'])
-const squarerootButton = document.querySelector('[data-square-root'])
-const exponetButton = document.querySelector('[data-exponets'])
+const numberButtons =document.querySelectorAll('[data-number}')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const alg1Button = document.querySelector('[data-alg1-operatrions]')
+const geomButton = document.querySelector('[data-geom-operations]')
+const squaringButton = document.querySelector('[data-squaring]')
+const squarerootButton = document.querySelector('[data-square-root]')
+const exponetButton = document.querySelector('[data-exponets]')
 const previousOperandTextElement = document.querySelector('
 [data-previous-operand]')  
 const currentOperandTextElement = document.querySelector('
