@@ -15,10 +15,18 @@ delete() {
  
 }
 appendNumber(number) {
-    this.currentOperand = number
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currnetOperand.tostring() + number.tostring()
 }
 
 chooseOperation(operation) {
+    if (this.currentOperand === '') return
+    if (this.previousOperand !== '') {
+        this.compute()
+    }
+    this.operation = operation 
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
  
 }
  
@@ -28,18 +36,20 @@ compute() {
  
 updateDisplay() {
     this.currentOperandTextElement.innerText = this.currentOperand
+    this.previousOperandTextElement.innertext = this.previousOperand
 }
  
-const numberButtons = document.querySelectorall('[data-number]')
-const operationButton = document.querySelectorall('[data-operation'])
-const equalsButton = document.querySelectorall('[data-equals'])
-const deleteButton = document.querySelectorall('[data-delete'])
-const allClearButtons = document.querySelectorall('[data-all-clear'])
-const alg1Button = document.querySelectorall('[data-alg1-operatrions'])
-const geomButton = document.querySelectorall('[data-geom-operations'])
-const squaringButton = document.querySelectorall('[data-squaring'])
-const squarerootButton = document.querySelectorall('[data-square-root'])
-const exponetsButton = document.querySelectorall('[data-exponets'])
+    
+const numberButtons =document.querySelectorAll('[data-number'])
+const operationButtons = document.querySelectorAll('[data-operation'])
+const equalsButton = document.querySelector('[data-equals'])
+const deleteButton = document.querySelector('[data-delete'])
+const allClearButton = document.querySelector('[data-all-clear'])
+const alg1Button = document.querySelector('[data-alg1-operatrions'])
+const geomButton = document.querySelector('[data-geom-operations'])
+const squaringButton = document.querySelector('[data-squaring'])
+const squarerootButton = document.querySelector('[data-square-root'])
+const exponetButton = document.querySelector('[data-exponets'])
 const previousOperandTextElement = document.querySelector('
 [data-previous-operand]')  
 const currentOperandTextElement = document.querySelector('
@@ -52,7 +62,14 @@ numberButtons.foreEach(button => {
         calculater.appendnumber(button.innertext)
         calculater.upadateDisplay()
     })
-})                                                                 
+}) 
+
+operationButtons.foreEach(button => {
+    button.addEventListener('click', () => {
+        calculater.chooseOperarion(button.innertext)
+        calculater.upadateDisplay()
+    })
+})                                                
       console.log(button.clientWidth);
       console.log(button.clientHeight);
       button addEventListener('click', () => {
