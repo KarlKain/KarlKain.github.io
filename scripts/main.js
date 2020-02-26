@@ -12,7 +12,7 @@ clear() {
 }
  
 delete() {
- 
+  this.currentOperand = this.currentOperamd.tostring().slice(0, -1)
 }
 appendNumber(number) {
     if (number === '.' && this.currentOperand.includes('.')) return
@@ -78,29 +78,42 @@ const previousOperandTextElement = document.querySelector('
 const currentOperandTextElement = document.querySelector('
 [data-current-operand]')
 
-const calculater = new Calculater(previousOperandTextElement,currentOperandTextElement)
+const calculator = new Calculator(previousOperandTextElement,currentOperandTextElement)
 
 numberButtons.foreEach(button => {
     button.addEventListener('click', () => {
-        calculater.appendnumber(button.innertext)
-        calculater.upadateDisplay()
+        calculator.appendnumber(button.innertext)
+        calculator.upadateDisplay()
     })
 }) 
 
-operationButtons.foreEach(button => {
+operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculater.chooseOperarion(button.innertext)
-        calculater.upadateDisplay()
+        calculator.chooseOperation(button.innertext)
+        calculator.upadateDisplay()
     })
 })                           
 
 equalsbutton.forEach(button => {
     button.addEventListener('click', () => {
-        calculater.chooseOperarion(button.innertext)
-        calculater.upadateDisplay()
+        calculator.compute()
+        calculator.upadateDisplay()
     })
 })                           
 
+allClearbutton.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.clear()
+        calculator.upadateDisplay()
+    })
+})
+
+deletebutton.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.delete()
+        calculator.upadateDisplay()
+    })
+})  
       console.log(button.clientWidth);
       console.log(button.clientHeight);
       button addEventListener('click', () => {
