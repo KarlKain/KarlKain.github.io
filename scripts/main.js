@@ -57,22 +57,6 @@ compute() {
     this.previousOperand = ''
 }
 
-getDisplayNumber(number) {
-  const stringNumber = number.tostring()
-  const integerDigits = parsefloat (stringNumber.split('.')[0])
-  const decimalDigits = stringNumber.split('.')[1]
-  let integerDisplay
-  if (isNaN(integerDigits)) {
-    integerDisplay = ''
-  } else {  
-    integerDisplay = integerDigits.tolocaleString('en', {
-    maxiumumFractionDigits: 0})    
-  }
-  if (decimalDigits != null) {
-    return '$(integerDisplay}.${decimaDigits})'
-  } else {
-    return integerDisplay  
-}    
 updateDisplay(){
     this.currentOperandTextElement.innerText = this.currentOperand
       this.getDisplayNumber(this.currentOperand)
