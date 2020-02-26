@@ -31,11 +31,17 @@ updateDisplay() {
 }
  
 const numberButtons = document.querySelectorall('[data-number]')
-const operationButtons - document.querySelectorall('[data-operation'])
-const equalsButton
+const operationButton = document.querySelectorall('[data-operation'])
+const equalsButton = document.querySelectorall('[data-equals'])
+const deleteButton = document.querySelectorall('[data-delete'])
+const allClearButtons = document.querySelectorall('[data-all-clear'])
+const alg1Button = document.querySelectorall('[data-alg1-operatrions'])
+const geomButton = document.querySelectorall('[data-geom-operations'])
+const squaringButton = document.querySelectorall('[data-squaring'])
+const squarerootButton = document.querySelectorall('[data-square-root'])
+const exponetsButton = document.querySelectorall('[data-exponets'])
 const previousOperandTextElement = document.querySelector('
-[data-previous-operand]')
-  
+[data-previous-operand]')  
 const currentOperandTextElement = document.querySelector('
 [data-current-operand]')
 
