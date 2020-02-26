@@ -1,4 +1,4 @@
-/*window,onload = () => {
+
 class Calculator {
     constructor(previousOperandTextElement,currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
@@ -29,8 +29,7 @@ class Calculator {
  
  upadateDisplay() {
      this.currentOperandTextElement.innerText = this.currentOperand
- }
-} 
+ } 
     const buttons = document.querySelectorAll('button');
     const currentOperandTextElement = document.querySelector('
     [data-current-operand]')
