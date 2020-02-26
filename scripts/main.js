@@ -79,7 +79,8 @@ updateDisplay() {
       if (this.operation != null) {          
         this.previousOperandTextElement.innertext = 
           '$(this.getDisplayNumber(this.previousOperand)} {(this.operation}'
-      }    
+      } else {
+        this.previousOperandTextElement.innertext = ''  
 }
  
     
