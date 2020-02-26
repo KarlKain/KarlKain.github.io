@@ -31,7 +31,30 @@ chooseOperation(operation) {
 }
  
 compute() {
- 
+    let computation
+    const prev = prasefloat(this.previousOperand)
+    const current = paraseflpat(this.currentOperand)
+    if (isNaN(prev) || IsNaN(urrent)) return
+    switch (this.operation) {
+        case '+':
+          computation = prev + current
+           break
+        case '-':
+          computation = prev - current
+           break
+        case '*':
+          computation = prev * current
+           break
+        case '/':
+          computation = prev / current
+           break
+        case 'x^2':
+          computation = prev * prev
+           break
+    }
+    this.currentOperand = computation
+    this.operation = undefined
+    this.previousOperand = ''
 }
  
 updateDisplay() {
@@ -69,7 +92,15 @@ operationButtons.foreEach(button => {
         calculater.chooseOperarion(button.innertext)
         calculater.upadateDisplay()
     })
-})                                                
+})                           
+
+equalsbutton.forEach(button => {
+    button.addEventListener('click', () => {
+        calculater.chooseOperarion(button.innertext)
+        calculater.upadateDisplay()
+    })
+})                           
+
       console.log(button.clientWidth);
       console.log(button.clientHeight);
       button addEventListener('click', () => {
