@@ -27,9 +27,11 @@ class Calculator {
  
  }
  
- upadateDisplay() {
-     this.currentOperandTextElement.innerText = this.currentOperand
- } 
+updateDisplay() {
+ this.currentOperandTextElement.innerText = this.currentOperand
+}
+ 
+    
     const buttons = document.querySelectorAll('button');
     const currentOperandTextElement = document.querySelector('
     [data-current-operand]')
