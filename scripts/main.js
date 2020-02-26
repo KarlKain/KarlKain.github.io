@@ -65,13 +65,21 @@ getDisplayNumber(number) {
   if (isNaN(integerDigits)) {
     integerDisplay = ''
   } else {  
-      
+    integerDisplay = integerDigits.tolocaleString('en', {
+    maxiumumFractionDigits: 0})    
   }
+  if (decimalDigits != null) {
+    return '$(integerDisplay}.${decimalDigits}'
+  } else {
+    return integerDisplay  
 }    
 updateDisplay() {
     this.currentOperandTextElement.innerText = this.currentOperand
       this.getDisplayNumber(this.currentOperand)
-    this.previousOperandTextElement.innertext = this.previousOperand
+      if (this.operation != null) {          
+        this.previousOperandTextElement.innertext = 
+          '$(this.getDisplayNumber(this.previousOperand)} {(this.operation}'
+      }    
 }
  
     
