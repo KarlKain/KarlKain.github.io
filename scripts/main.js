@@ -56,9 +56,21 @@ compute() {
     this.operation = undefined
     this.previousOperand = ''
 }
- 
+
+getDisplayNumber(number) {
+  const stringNumber = number.tostring()
+  const integerDigits = parsefloat (stringNumber.split('.')[0])
+  const decimalDigits = stringNumber.split('.')[1]
+  let integerDisplay
+  if (isNaN(integerDigits)) {
+    integerDisplay = ''
+  } else {  
+      
+  }
+}    
 updateDisplay() {
     this.currentOperandTextElement.innerText = this.currentOperand
+      this.getDisplayNumber(this.currentOperand)
     this.previousOperandTextElement.innertext = this.previousOperand
 }
  
