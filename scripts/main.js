@@ -69,11 +69,11 @@ getDisplayNumber(number) {
     maxiumumFractionDigits: 0})    
   }
   if (decimalDigits != null) {
-    return '$(integerDisplay}.${decimalDigits}'
+    return '$(integerDisplay}.${decimaDigits})'
   } else {
     return integerDisplay  
 }    
-updateDisplay() {
+updateDisplay(){
     this.currentOperandTextElement.innerText = this.currentOperand
       this.getDisplayNumber(this.currentOperand)
       if (this.operation != null) {          
