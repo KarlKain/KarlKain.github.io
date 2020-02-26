@@ -30,8 +30,9 @@ updateDisplay() {
     this.currentOperandTextElement.innerText = this.currentOperand
 }
  
-    const buttons = document.querySelectorAll('button');
-   
+const numberButtons = document.querySelectorall('[data-number]')
+const operationButtons - document.querySelectorall('[data-operation'])
+const equalsButton
 const previousOperandTextElement = document.querySelector('
 [data-previous-operand]')
   
