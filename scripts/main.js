@@ -31,7 +31,7 @@ chooseOperation(operation) {
 }
 
 eval(expression){
-   (2=2)
+   (2+2)
 }    
 compute() {
     let computation
