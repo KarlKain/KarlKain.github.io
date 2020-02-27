@@ -126,8 +126,8 @@ deletebutton.forEach(button => {
         caculator.appendNumber(button.innerText)
         caculator.updateDislplay()
       button.style.height = `${ button.clientWidth }px`;
-
-    });
+      
+      });
 
 
 
