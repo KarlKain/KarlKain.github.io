@@ -81,10 +81,8 @@ const geomButton = document.querySelector('[data-geom-operations]')
 const squaringButton = document.querySelector('[data-squaring]')
 const squarerootButton = document.querySelector('[data-square-root]')
 const exponetButton = document.querySelector('[data-exponets]')
-const previousOperandTextElement = document.querySelector('
-[data-previous-operand]')  
-const currentOperandTextElement = document.querySelector('
-[data-current-operand]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')  
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
 const calculator = new Calculator(previousOperandTextElement,currentOperandTextElement)
 
