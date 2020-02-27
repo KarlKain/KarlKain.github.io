@@ -29,7 +29,10 @@ chooseOperation(operation) {
     this.currentOperand = ''
  
 }
- 
+
+eval(expression){
+   (2=2)
+}    
 compute() {
     let computation
     const prev = prasefloat(this.previousOperand)
