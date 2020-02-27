@@ -122,12 +122,4 @@ deletebutton.forEach(button => {
 })  
       console.log(button.clientWidth);
       console.log(button.clientHeight);
-      button addEventListener('click', () => {
-        caculator.appendNumber(button.innerText)
-        caculator.updateDislplay()
       button.style.height = `${ button.clientWidth }px`;
-      
-      });
-
-
-
