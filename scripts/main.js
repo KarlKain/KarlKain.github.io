@@ -31,7 +31,7 @@ chooseOperation(operation) {
 }
 
 eval(expression){
-   (2+2) === (4)
+ document.querySelectorAll('[data-number}').innerText 
 }    
 compute() {
     let computation
