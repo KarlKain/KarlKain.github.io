@@ -64,7 +64,7 @@ updateDisplay(){
     this.currentOperandTextElement.innerText = this.currentOperand  
     this.previousOperandTextElement.innertext = this.previousOperand 
 }
- 
+
     
 const numberButtons =document.querySelectorAll('[data-number}')
 const operationButtons = document.querySelectorAll('[data-operation]')
