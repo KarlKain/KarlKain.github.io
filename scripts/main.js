@@ -61,13 +61,8 @@ compute() {
 }
 
 updateDisplay(){
-    this.currentOperandTextElement.innerText = this.currentOperand
-      this.getDisplayNumber(this.currentOperand)
-      if (this.operation != null) {          
-        this.previousOperandTextElement.innertext = 
-          '$(this.getDisplayNumber(this.previousOperand)} {(this.operation}'
-      } else {
-        this.previousOperandTextElement.innertext = ''  
+    this.currentOperandTextElement.innerText = this.currentOperand  
+    this.previousOperandTextElement.innertext = this.previousOperand 
 }
  
     
