@@ -44,32 +44,6 @@ class Calculator {
  this.operation = undefined
  this. previousOperand = ''
  }
- compute() {
-     let computation
-     const prev = prasefloat(this.previousOperand)
-     const current = prasefloat(this.currentOperand)
-     if (isNaN(prev) || IsNaN(current)) return
-     switch (this.operation) {
-         case '+':
-           computation = prev + current
-            break
-         case '-':
-           computation = prev - current
-            break
-         case '*':
-           computation = prev * current
-            break
-         case '/':
-           computation = prev / current
-            break
-         case 'x^2':
-           computation = prev * prev
-            break
- }
-     this.currentOperand = computation
-     this.operation = undefined
-     this.previousOperand = ''
- }
 
  updateDisplay(){
      this.currentOperandTextElement.innerText = this.currentOperand  
