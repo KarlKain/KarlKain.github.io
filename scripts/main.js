@@ -31,20 +31,9 @@ class Calculator {
  }
 
  eval(expression){
-    let computation
-    const prev = parsefloat(this.currentOperand)
-    const current = parsefloat(this.prevOperand)
-    if (isNaN(prev) || isNaN(current)) return
-    switch (this.operation) {
-        if (document.querySelector('[data-equals]'))return
-        eval(document.querySelectorAll('[data-number}').innerText,document.querySelectorAll('[data-operation]').innerText)
-        break
- }
- this.currentOperand = computation
- this.operation = undefined
- this. previousOperand = ''
- }
 
+ }
+ 
  updateDisplay(){
      this.currentOperandTextElement.innerText = this.currentOperand  
      this.previousOperandTextElement.innertext = this.previousOperand 
