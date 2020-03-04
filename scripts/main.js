@@ -31,13 +31,24 @@ class Calculator {
  }
 
  eval(expression){
-    document.querySelectorAll('[data-number}').innerText 
- }    
+    let computation
+    const prev = parsefloat(this.currentOperand)
+    const current = parsefloat(this.prevOperand)
+    if (isNaN(prev) || isNaN(current)) return
+    switch (this.operation) {
+        if (document.querySelector('[data-equals]'))return
+        eval(document.querySelectorAll('[data-number}').innerText,document.querySelectorAll('[data-operation]').innerText)
+        break
+ }
+ this.currentOperand = computation
+ this.operation = undefined
+ this. previousOperand = ''
+ }
  compute() {
      let computation
      const prev = prasefloat(this.previousOperand)
-     const current = paraseflpat(this.currentOperand)
-     if (isNaN(prev) || IsNaN(urrent)) return
+     const current = prasefloat(this.currentOperand)
+     if (isNaN(prev) || IsNaN(current)) return
      switch (this.operation) {
          case '+':
            computation = prev + current
