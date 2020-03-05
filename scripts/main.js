@@ -1,8 +1,7 @@
 window.onload = () => {
-    
-    const buttons = [...document.getElementsByTagName('button')];
     const output = document.getElementById('output');
     
+    const buttons = [...document.getElementsByTagName('button')];
     buttons.forEach((button) => {
         button.style.height = `${button.clientWidth}px`;
         button.onclick = () => {
@@ -33,5 +32,12 @@ window.onload = () => {
         terms.pop();
         output.innerText = terms.join('');
     }
+}
+
+window.onresize = () => {
     
+    const buttons = [...document.getElementsByTagName('button')];
+    buttons.forEach((button) => {
+        button.style.height = `${button.clientWidth}px`;
+    });
 }
