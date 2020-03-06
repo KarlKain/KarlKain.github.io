@@ -30,4 +30,8 @@ button {
     padding: 10px;
     color: white;
     font-size: 45pt;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    work-break: break-all;
 }
