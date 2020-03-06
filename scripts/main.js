@@ -33,10 +33,3 @@ window.onload = () => {
         output.innerText = terms.join('');
     }
 }
-
-window.onresize = () => {
-    const buttons = [...document.getElementsByTagName('button')];
-    buttons.forEach((button) => {
-        button.style.height = `${button.clientWidth}px`;
-    });
-}
