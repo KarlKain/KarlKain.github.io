@@ -36,7 +36,7 @@ window.onload = () => {
 
 
 window.onresize = () => {
-    const buttons = [...document.getElementByTagName('button')];
+    const buttons = [...document.getElementsByTagName('button')];
     buttons.forEach((button) => {
         button.style.height = `${button.clientWidth}px`;
     });
